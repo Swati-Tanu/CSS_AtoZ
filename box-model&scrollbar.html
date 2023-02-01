@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model & Scrollbar</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .boxmodel{
+            width: 400px;
+            height: 200px;
+            background-color: bisque;
+            
+        }
+        input{
+            padding: 5px 5px 5px 10px;
+            margin: 20px;
+        }
+        label{
+            margin-left: 20px;
+        }
+        p{
+            width: 200px;
+            height: 100px;
+            border: 1px solid black;
+            overflow: scroll; /*hidden: hides; auto:can scroll only downward*/
+            /*overflow-y; overflow-x: ;*/
+        }
+    </style>
+</head>
+<body>
+    <!--Box Model: Content, Padding, Border, Margin-->
+    <div class="boxmodel">
+        <label for="">Username</label>
+        <input type="text" name="" id="">
+    </div>
+    <hr>
+    <!--Scrollbar/Overflow: visible, hidden, scroll, auto-->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptas hic ullam, enim animi libero voluptatum quisquam dicta facilis nobis labore nam magni iusto voluptatibus. Unde explicabo neque provident et adipisci fugiat sed architecto. Sequi veniam molestiae repudiandae beatae tenetur. Iure, eius. Laudantium ipsum quasi earum quidem placeat dolores, eaque non ullam in deserunt at laborum veritatis, deleniti ad nisi omnis corporis, saepe hic commodi rem modi. Maxime nemo error laboriosam praesentium sequi doloremque fugiat animi, mollitia libero temporibus, quia amet explicabo quaerat doloribus. Nulla eum aliquid commodi in quas praesentium voluptates eos rem? Voluptatum aliquid recusandae, consequatur optio vero earum sint! Dolor quas suscipit nisi consequatur minima quam, sit officiis quibusdam praesentium quia eligendi sed saepe repudiandae tenetur consequuntur distinctio nam in iure temporibus odio sint quaerat odit beatae eum! Rem incidunt voluptatem distinctio voluptas veritatis aperiam rerum inventore, consequuntur laborum tempore. Hic sit eaque nobis magni, sed libero pariatur laborum nisi blanditiis illum nihil nulla aspernatur nesciunt velit aliquid dolorum, aut nam placeat dolor molestiae soluta similique ab repellat? Corrupti, ratione asperiores voluptas inventore nobis ab cumque sit rerum modi dolore tempore exercitationem! In magnam dolore quam eius vel, vitae voluptates est, modi, iure possimus ratione! Quisquam, consequatur.</p>
+</body>
+</html>
