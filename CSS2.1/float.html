@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float & Display Property & Cursors</title>
+    <style>
+        /*cursors: auto,crosshair,default,pointer,move,text,wait,help,e(ne,nw,n,se,sw,s,w)-resize*/
+        *{
+            margin:0;
+            padding: 0;
+        }
+        .header{
+            width: 100%;
+            height: 80px;
+            background-color: gold;
+        }
+        .logo{
+            width: 30%;
+            line-height: 80px; /*To bring the line in center from top we use line-height*/
+            text-align: center;
+            background-color: black;
+            color: white;
+            float: left; /*Used to bring divs in one line than downwards.It is different than display.*/
+            cursor: crosshair;
+        }
+        .menu{
+            width: 70%;
+            line-height: 80px; 
+            float: right;
+            cursor: pointer;
+        }
+        ul{
+            list-style: none;
+            text-align: right;
+        }
+        li{
+            /*display: inline; /*Used to bring elements in one line than downwards. It doesnot gives and padding by default as inline.*/
+            /*display: block; /*Does same thing as inline but has div so appears one after other*/
+            display: inline-block;/* Best option */
+            padding: 0 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">The Icon</div>
+        <div class="menu">
+            <ul>
+                <li>Home</li>
+                <li>Services</li>
+                <li>Products</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

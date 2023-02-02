@@ -1,0 +1,93 @@
+.text_effects{
+	text-shadow:2px 2px 2px blue;
+	transition: transform 2s; /*To use 2D: rotate()*/
+}
+
+/*fontcss3*/
+
+@font-face{
+	font-family: anything;
+	src:url('go3v2.ttf');
+}
+
+.font_about{
+font-family: anything;
+}
+
+/*animation in css3*/
+
+.batman_contact{
+	width: 100%; 
+	height: 100px;  
+	position: relative;
+}
+
+.batman_contact img{
+	width: 140px; height: 120px;
+	position: absolute; 
+	left: 0; top: -15px;
+	animation-name: runBatman;
+	animation-duration: 6s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@keyframes runBatman{
+	0%{left: 0}
+	100%{ left: 85% }
+}
+
+/*transition in css3*/
+.love_class{
+	width: 50px; 
+	height: 50px; 
+	transition-property: transform; /*To use 2D: scale()*/
+	transition-duration: 1s; 
+}
+
+.love_class:hover{
+	/*width: 100px; height: 100px; */
+	transform: scale(2, 2); /*2D: scale()*/
+}
+
+/*multiple column in css3*/
+
+.about_para{
+	column-count: 3;
+	column-gap: 50px;
+	column-rule: dashed;
+	text-align: justify;
+}
+
+/*border in css3*/
+
+.img-fluid{
+	border-radius: 30px;
+}
+
+.card{
+	box-shadow: 4px 4px 5px 4px grey;
+}
+
+/*2D: transform in css3*/
+
+.text_effects:hover{
+	transform: rotate(360deg);
+}
+
+/*linear-gradient*/
+
+.join_gradient{
+	background-image: linear-gradient(to left,#F650FE    , #607BF5);
+} /*Always use background-image not bg color in case of linear-gradient.*/
+
+/*flexbox in css3*/
+
+.flex_css{
+	width: 100%; height: 100px; 
+	background-image: linear-gradient(to left,#F650FE    , #607BF5);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}

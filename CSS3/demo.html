@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-5</title>
+    <style>
+        /* Text-shadow */
+        #text_shadow{
+            text-shadow: 20px 20px 10px #6AAFCF;
+        }
+        /* Word-wrap */
+        #word_wrap{
+            word-wrap: break-word;
+            width: 150px;
+            border: 1px solid #ff0000;
+        }
+        #no_wrap{
+            width: 150px;
+            border: 1px solid #ff0000;
+        }
+        .mybg_css{
+            width:300px;
+            height: 300px;
+            background-image: url('/logo-color.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%; /*helps in setting bg image size*/
+        }
+        /* Resizing */
+        .resize{
+            border: 2px solid;
+            padding: 20px;
+            width: 300px;
+            resize: horizontal; /*vertical,both*/
+            overflow: auto;
+        }
+        /* Box sizing */
+        .boxsizing{
+            width: 300px;
+            height: 100px;
+            background-color: black;
+            padding-left: 30px;
+            transform: translateX(50px); /* 2D: translate() */
+            transform: translateY(50px); 
+            box-sizing: border-box; /*It keeps every padding,margin,etc sizes inside the box.*/
+        }
+        /* 2D: translate() */
+    </style>
+</head>
+<body>
+    <div id="text_shadow"><h1>Text Shadow</h1></div>
+    <div>Below is example of Wrod-Wrap</div>
+    <div id="word_wrap">you can break the line hereeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.</div>
+    <p>Without using wrop-wrap text will go like this.</p>
+    <div id="no_wrap">you can't break the line hereeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.</div>
+    <div class="mybg_css"></div>
+    <div class="resize">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique voluptatem explicabo impedit natus, sapiente, quas alias optio ex autem modi placeat ipsam reprehenderit! Harum, aspernatur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur obcaecati a dolor fugit dolores sapiente!</p>
+        <p><b>Note:</b>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="boxsizing"><p style="color: gold;">Box sizing is important!</p></div>
+</body>
+</html>
